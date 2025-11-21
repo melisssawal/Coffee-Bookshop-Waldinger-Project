@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+
+}
+
+
+
+header {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba (0, 0, 0, 0.2), rgba (0, 0, 0, 0.2)), ;
+}
