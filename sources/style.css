@@ -1,4 +1,6 @@
-
+body {
+    background-color: #C4BDB4;
+}
 
 :root {
     --main-font-family: "Lancelot", serif;
@@ -10,7 +12,7 @@
     --accent-color:#39514F;
 }
 
-
+/*Header*/
 header {
     max-width: 1200px;
     margin: 0 auto;
@@ -20,16 +22,71 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 60px 0px;
+    padding: 190px;
+}
+
+header h4 {
+    color: var(--main-color);
+    font-family: var(--secondary-font-family);
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-weight: 900;
+    margin: 0;
 }
 
 header h1 {
     font-family: var(--accent-font-family);
     color: var(--main-color);
-    font-size: 48px;
+    font-size: 65px;
+    line-height: 1.5;
+    margin: 0;
 }
 
 header h3 {
     font-family: var(--secondary-font-family);
     color: var(--main-color);
+    margin: 0;
+    line-height: 1.5;
+    font-size: 20px;
+
+}
+
+header button {
+    color: var(--main-font-color);
+    background-color: var(--main-color);
+    font-family: var(--secondary-font-family);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    margin: 20px;
+
+}
+
+/*Footer*/
+footer h4 {
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/*Media Queries*/
+
+@media (max-width: 1000px) {
+
+    header {
+        padding: 30px;  
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h3 {
+        font-size: 16px;
+    }
 }
