@@ -1,13 +1,35 @@
-body {
-    text-align: center;
 
+
+:root {
+    --main-font-family: "Lancelot", serif;
+    --accent-font-family: "Petit Formal Script", cursive;
+    --secondary-font-family: "Newsreader", serif;
+    --main-color:#C4BDB4;
+    --secondary-color: #857467;
+    --main-font-color: #363331;
+    --accent-color:#39514F;
 }
 
 
-
 header {
-
     max-width: 1200px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba (0, 0, 0, 0.2), rgba (0, 0, 0, 0.2)), ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/cozy-bookstore-cafe-stockcake.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 60px 0px;
+}
+
+header h1 {
+    font-family: var(--accent-font-family);
+    color: var(--main-color);
+    font-size: 48px;
+}
+
+header h3 {
+    font-family: var(--secondary-font-family);
+    color: var(--main-color);
 }
