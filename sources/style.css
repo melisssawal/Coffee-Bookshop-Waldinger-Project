@@ -10,6 +10,20 @@ body {
     --main-font-color: #363331;
 }
 
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
+}
+.text-center {
+    text-align: center;
+}
+/*GRIDS*/
+
 .grid {
     display: grid;
     grid-gap: 50px;
@@ -20,21 +34,31 @@ body {
 }
 
 .three-column-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-grid {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/*SECTIONS*/
 
 section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px;
 }
 
-/*Header*/
+section.secondary {
+    background-color: #f0edea;
+}
+
+section.footer {
+    padding: 40px;
+}
+
+/*HEADER*/
+
 header {
     margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -85,7 +109,6 @@ header button {
 }
 
 main {
-    max-width: 1200px;
     margin: 0 auto;
     background-color: white;
     color: var(--main-font-color);
@@ -109,14 +132,46 @@ main h3 {
     margin: 0;
 }
 
+main h4 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700px;
+}
+
 main p {
 margin: 0;
 line-height: 1.5;
 }
 
-.img-responsive {
-    max-width: 100%;
+.card {
+    background-color: white;
+    font-family: var(--secondary-font-family);
 }
+
+.card-body {
+    padding: 40px;
+}
+
+.card-footer {
+    padding: 20px 30px;
+}
+
+.button {
+    display: block;
+    color: #C4BDB4;
+    padding: 16px;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #363331;
+    text-decoration: none;
+}
+
+
 
 /*Footer*/
 
@@ -128,7 +183,6 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     font-family: var(--secondary-font-family);
-    padding: 40px;
 }
 
 footer a {
