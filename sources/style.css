@@ -4,23 +4,38 @@ body {
 
 :root {
     --main-font-family: "Lancelot", serif;
-    --accent-font-family: "Petit Formal Script", cursive;
     --secondary-font-family: "Newsreader", serif;
     --main-color:#C4BDB4;
     --secondary-color: #857467;
     --main-font-color: #363331;
-    --accent-color:#39514F;
 }
 
 .grid {
     display: grid;
+    grid-gap: 50px;
+}
+
+.two-column-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.three-column-grid {
     grid-template-columns: 1fr 2fr 2fr;
-    grid-gap: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
 }
 
 /*Header*/
 header {
-    max-width: 1200px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../images/cozy-bookstore-cafe-stockcake.jpg");
@@ -41,7 +56,7 @@ header h4 {
 }
 
 header h1 {
-    font-family: var(--accent-font-family);
+    font-family: "Petit Formal Script", cursive;
     color: var(--main-color);
     font-size: 65px;
     line-height: 1.5;
@@ -67,15 +82,46 @@ header button {
     font-weight: bold;
     border: none;
     margin: 20px;
+}
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    color: var(--main-font-color);
+    font-family: var(--secondary-font-family);
+}
+
+main h2 {
+    margin: 0;
+    opacity: 0.3;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+}
+
+main p {
+margin: 0;
+line-height: 1.5;
+}
+
+.img-responsive {
+    max-width: 100%;
 }
 
 /*Footer*/
 
 footer {
     color: var(--main-font-color);
-    max-width: 1200px;
-    margin: 0 auto;
     background-image: linear-gradient(rgba(196, 189, 180, 0.8), rgba(196, 189, 180, 0.8)),
         url("../images/book_stack.jpg");
     background-size: cover;
@@ -115,6 +161,13 @@ footer ul {
 
 @media (max-width: 1000px) {
 
+    .grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 5px;
+    }
+
+    /*Header*/
     header {
         padding: 30px;  
     }
@@ -126,4 +179,14 @@ footer ul {
     header h3 {
         font-size: 16px;
     }
+
+
+/*Footer*/
+
+footer {
+    padding: 20px;
+    text-align: center;
 }
+
+}
+
