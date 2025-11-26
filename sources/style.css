@@ -10,6 +10,11 @@ body {
     --main-font-color: #363331;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
